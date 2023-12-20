@@ -9,7 +9,7 @@ import java.util.Properties;
 public class ConfigurationHolder {
     public static Properties commonKafkaConfiguration() {
         final Properties properties = new Properties();
-        properties.put("bootstrap.servers", "kafka.local.mastercontrol.com:9092");
+        properties.put("bootstrap.servers", "kafka.local.com:9092");
         properties.put("basic.auth.credentials.source", "USER_INFO");
         properties.put("schema.registry.basic.auth.user.info", "pw");
         properties.put("sasl.jaas.config", "");
